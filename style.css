@@ -42,6 +42,10 @@ nav a {
   font-size: .8rem;
 }
 
+nav a:hover {
+  color: #aeaec659;
+}
+
 .left-nav {
   margin-left: 4rem;
   padding-right: 4rem;
@@ -80,8 +84,9 @@ nav a {
 
 @keyframes smoothScroll {
 	0% {
-		transform: translateY(-50px);
-	}
+    transform: translateY(-50px);
+  }
+
 	100% {
 		transform: translateY(0px);
 	}
@@ -109,5 +114,5 @@ nav a {
   }
 
   .shift-hero {
-    margin-top: 100px;
+    margin-top: 300px;
   }
