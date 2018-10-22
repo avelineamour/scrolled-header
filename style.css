@@ -1,0 +1,113 @@
+html {
+  font-size: 16px;
+}
+
+body { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  top: 0;
+  font-family: "Playfair Display";
+ }
+
+h1, h3 {
+  font-size: 1rem;
+  color: #aeaec6;
+}
+
+/* Unscrolled Header Styles */
+
+.header { 
+  height: 300px;
+  border-top: solid 5px #aeaec659;
+  border-bottom: solid 5px #aeaec659;
+  font-family: "Playfair Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #5d5d8e;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #5d5d8e;
+  text-decoration: none;
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+.left-nav {
+  margin-left: 4rem;
+  padding-right: 4rem;
+  border-right: solid 1px #5d5d8e;
+}
+
+.right-nav {
+  margin-right: 4rem;
+  padding-left: 4rem;
+  border-left: solid 1px #5d5d8e;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+/* Scrolled Header Styles */
+
+.scrolled-nav {
+  justify-content: space-around;
+}
+
+.fixed {
+  height: 100px;
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+  margin-bottom: 4rem;
+  background-color: white;
+  animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* Main */
+  
+  section {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .hero {
+    background-color: #f2f2f6;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .shift-hero {
+    margin-top: 100px;
+  }
