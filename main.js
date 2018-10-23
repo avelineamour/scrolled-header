@@ -35,7 +35,7 @@ $(function(){
   
     const scrolledHeader = "<a href='#'>Home</a><a href='#'>Resumé</a><a href='#'>Portfolio</a><a href='#'>About</a><a href='#'>Blog</a><a href='#'>Contact</a>"
   
-    const unscrolledHeader = "<div class='side-nav left-nav'><a href='#'>About</a><a href='#'>Resumé</a><a href='#'>Portfolio</a></div><div class='side-nav'><h3>full stack web developer<br>&<br>designer</h3></div><div class='side-nav right-nav'><a href='#'>Blog</a><a href='#'>Home</a><a href='#'>Contact</a></div>"
+    const unscrolledHeader = "<div class='side-nav left-nav'><a href='#'>Home</a><a href='#'>Resumé</a><a href='#'>Portfolio</a></div><div class='side-nav'><h3>full stack web developer<br>&<br>designer</h3></div><div class='side-nav right-nav'><a href='#'>About</a><a href='#'>Blog</a><a href='#'>Contact</a></div>"
   
     if (scroll >= 300 && $(window).width() > 768) {
       nav.html(scrolledHeader)
@@ -46,6 +46,7 @@ $(function(){
     else if (scroll <= 300 && $(window).width() > 768 ) {
       header.removeClass('fixed');
       hero.removeClass("shift-hero");
+      $("nav").removeClass("scrolled-nav")
       nav.html(unscrolledHeader)
     
   }
