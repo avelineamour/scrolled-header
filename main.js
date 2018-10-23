@@ -12,6 +12,13 @@ $(function(){
       menuDiv.addClass("responsive-menu-toggled")
       menuDiv.html(responsiveNav)
       $(".hero").hide()
+      $(window).resize(function(){
+        if ($(window).width() > 768) {
+          $(".hero").show()
+          menuDiv.removeClass("responsive-menu-toggled")
+          menuDiv.empty()
+        }
+      })
     }
     else {
       menuDiv.removeClass("responsive-menu-toggled")
