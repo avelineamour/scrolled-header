@@ -11,10 +11,12 @@ $(function(){
     if (menuDiv.html() === "") {
       menuDiv.addClass("responsive-menu-toggled")
       menuDiv.html(responsiveNav)
+      $(".hero").hide()
     }
     else {
       menuDiv.removeClass("responsive-menu-toggled")
       menuDiv.empty()
+      $(".hero").show()
     }
   })
 

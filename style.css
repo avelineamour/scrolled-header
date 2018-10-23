@@ -107,6 +107,7 @@ nav h3 {
   section {
     height: 1000px;
     display: flex;
+    align-items: center;
     justify-content: center;
     color: white;
   }
@@ -178,7 +179,7 @@ nav h3 {
       position: absolute;
       top: 305px;
       padding-top: 3rem;
-      /* padding-bottom: 3rem; */
+      padding-bottom: 3rem;
       animation: smoothScroll2 1.5s forwards;
     }
 
