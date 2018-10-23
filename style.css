@@ -172,6 +172,10 @@ nav h3 {
       color:#5d5d8e;
     }
 
+    nav h3 {
+      font-size: 1.5rem;
+    }
+
     .responsive-menu-toggled {
       display: flex;
       background-color: #f2f2f6;
