@@ -213,4 +213,8 @@ nav h3 {
         transform: translateY(0px);
       }
     }
+
+    .social {
+      display: none;
+    }
   }
